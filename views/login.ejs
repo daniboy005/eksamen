@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+          <span class="logo">GetShitDone</span>
+        </div>
+        <div class="navbar-right">
+          <a href="/views/login.ejs" class="nav-link">Logg inn</a>
+          <a href="/views/login.ejs" class="nav-link">Todo-list</a>
+        </div>
+      </nav>    
+  <div class="container1">
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Login</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
